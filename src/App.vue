@@ -32,4 +32,10 @@ main{
   box-shadow: #d1e1e1;
   border-radius: 30px;
 }
+
+@media (width <= 640px){
+  .container{
+    padding: 10px;
+  }
+}
 </style>

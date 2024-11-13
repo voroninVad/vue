@@ -61,4 +61,17 @@ li .removeBtn {
     right: 0;
     padding: 5px;
 }
+@media (width <= 992px) {
+  li{
+    font-size: 18px;
+    height: 250px;
+  }
+}
+
+@media (width <= 768px) {
+  li{
+    font-size: 16px;
+    height: 250px;
+  }
+}
 </style>

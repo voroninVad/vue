@@ -92,4 +92,56 @@ ul {
     gap: 25px;
     justify-items: center;
 }
+
+@media (width <= 992px) {
+  .todo__form{
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .filter_btn{
+    width: 100%;
+  }
+  ul{
+    grid-template-columns: 1fr 1fr;
+  }
+  input{
+    width: 80%;
+  }
+  input,button{
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+@media (width <= 768px) {
+  input{    
+    width: 80%;
+  }
+  input,button{
+    font-size: 16px;
+    padding: 10px;
+  }
+  ul{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 640px){
+  .todo__form{
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  input{
+    width: 100%;
+  }
+  .filter_btn{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 10px 0 20px;
+  }
+}
 </style>
