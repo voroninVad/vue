@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.done{
+  background-color: #96ff8d;
+}
+.no-done{
+  background-color: #ff8d8d;
+}
+input{
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #dfebeb;
+  font-size: 20px;
+}
+button{
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #dfebeb;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width <= 992px) {
+  .todo__form{
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .filter_btn{
+    width: 100%;
+  }
+  ul{
+    grid-template-columns: 1fr 1fr;
+  }
+  input{
+    width: 80%;
+  }
+  input,button{
+    font-size: 18px;
+    padding: 15px;
+  }
+  li{
+    font-size: 18px;
+    height: 250px;
+  }
+}
+
+@media (width <= 768px) {
+  input{    
+    width: 80%;
+  }
+  input,button{
+    font-size: 16px;
+    padding: 10px;
+  }
+  ul{
+    grid-template-columns: 1fr;
+  }
+  li{
+    font-size: 16px;
+    height: 250px;
+  }
+}
+@media (width <= 640px){
+  .container{
+    padding: 10px;
+  }
+  .todo__form{
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  input{
+    width: 100%;
+  }
+  .filter_btn{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 10px 0 20px;
+  }
+}
